@@ -273,87 +273,307 @@
     </section>
 
 <!-- Vodafone 5G RedBox Section -->
+<!-- Vodafone 5G RedBox Section -->
 <section id="redbox" class="py-20 md:py-28 bg-tech-dark border-b border-tech-border relative overflow-hidden">
     <!-- Background Red Tech Glow -->
     <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-tech-red/5 rounded-full blur-[100px] pointer-events-none">
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-tech-red/5 rounded-[100%] blur-[120px] pointer-events-none">
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <!-- Header -->
-        <div class="mb-12 md:mb-16 text-center">
-           
-            <div style="background: #fff;"
-                class="inline-flex items-center gap-2 border border-tech-red/50 bg-tech-red/0 px-10 py-0 text-[14x] md:text-[14px] font-bold  text-tech-red  mb-5">
-                <div class="vodafone-badge">
-                    <img style="width: 50px;" src="https://cms.vodafone.com.tr/static/img/content/26-05/12/icon-5g-new-1778582932.gif"
-                        alt="vodafone">
-                </div> Vodafone Satış Noktası
+
+        <!-- Başlık & Banner -->
+        <div class="mb-16 text-center">
+            <div
+                class="inline-flex items-center gap-2 border border-tech-red/50 bg-tech-red/10 px-3 py-1.5 text-[9px] md:text-[10px] font-medium tracking-[0.2em] text-tech-red uppercase mb-5">
+                <i class="fa-solid fa-signal"></i> Vodafone Yetkili Satış Noktası
             </div>
-            <h2 class="text-3xl md:text-5xl font-semibold uppercase tracking-tight text-white mb-4">
+            <h2 class="text-3xl md:text-5xl font-semibold uppercase tracking-tight text-white mb-6">
                 5G RedBox <br class="md:hidden"><span class="font-light text-tech-silver">Ev İnterneti</span>
             </h2>
+
+            <!-- Banner Image -->
+            <div class="max-w-4xl mx-auto  border border-tech-border p-1 bg-tech-panel mb-8">
+                <img src="https://cms.vodafone.com.tr/static/img/content/26-05/08/5gredbox_hizgarantisi_1122x300-2x-1778237802.jpg"
+                    alt="Vodafone 5G RedBox"
+                    class="w-full h-[170px] object-cover object-left opacity-90 hover:opacity-100 transition-opacity duration-500">
+            </div>
+
             <div class="h-px w-16 bg-tech-red mx-auto mb-6"></div>
-            <p class="text-tech-silver font-light text-sm md:text-base max-w-2xl mx-auto">
-                5G RedBox ile altyapı beklemeden, Fiber hızında, kurulumsuz, anında ev interneti!
+            <p class="text-tech-silver font-light text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                Fiber altyapı olsun ya da olmasın, Vodafone 5G RedBox ile yüksek hızlı, kurulumsuz, fişe takıldığı anda
+                çalışan fiber hızında interneti evinize getiriyoruz. <strong>Memnun kalmazsan 30 gün içinde iade
+                    hakkı!</strong>
             </p>
         </div>
 
-        <!-- Content Grid -->
-        <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        <!-- Özellikler Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-20">
+            <div
+                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
+                <i class="fa-solid fa-gauge-high text-tech-red text-2xl"></i>
+                <div>
+                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">5G ile Hız Garantisi
+                    </h4>
+                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">Hızınız 50 Mbps’in altında
+                        kalırsa, ilk 30 gün içinde iade hakkı!</p>
+                </div>
+            </div>
 
-            <!-- Sol Taraf: Banner & Özellikler (7 Kolon) -->
-            <div class="lg:col-span-7 space-y-8">
-                <!-- Banner Image -->
-                <div class="border border-tech-border p-1 bg-tech-panel">
-                    <img src="https://cms.vodafone.com.tr/static/img/content/26-05/08/5gredbox_hizgarantisi_1122x300-2x-1778237802.jpg"
-                        alt="Vodafone 5G RedBox"
-                        class="w-full h-[170px] object-cover object-left opacity-90 hover:opacity-100 transition-opacity duration-500">
+            <div
+                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
+                <i class="fa-solid fa-box-open text-tech-red text-2xl"></i>
+                <div>
+                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">Anında Erişim</h4>
+                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">İster mağazadan teslim al, ister
+                        sipariş ver; adresine gelsin!</p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
+                <i class="fa-solid fa-plug text-tech-red text-2xl"></i>
+                <div>
+                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">Anında Bağlantı</h4>
+                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">Kurulum gerekmez. Kutusundan
+                        çıkar, prize tak, birkaç dakika içinde internetin aktifleşir.</p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
+                <i class="fa-solid fa-headset text-tech-red text-2xl"></i>
+                <div>
+                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">Anında Destek</h4>
+                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">Ayrıcalıklı 7/24 çağrı merkezi ile
+                        beklemeden çözüme ulaş.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarifeler -->
+        <div class="mb-20">
+            <div class="text-center mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold uppercase tracking-tight text-white mb-4">5G RedBox
+                    Tarifeleri</h3>
+                <div class="h-px w-12 bg-tech-silver/30 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Paket 1 -->
+                <div
+                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group">
+                    <div
+                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
+                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
+                            Garantisi</span>
+                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">300 GB</h4>
+                    </div>
+                    <div class="p-6 text-center border-b border-tech-border">
+                        <div class="text-3xl text-white font-bold">₺690 <span
+                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
+                                ay sabit fiyat garantili</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
+                                ile fiber hızında</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Kurulum gerekmez, fişe tak çalıştır</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Modem ücreti dahil</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                2.500 TL’ye kadar cayma bedeli bizden</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#redbox-form"
+                            class="block text-center border border-tech-red text-tech-red hover:bg-tech-red hover:text-white py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
+                            Başvur</a>
+                    </div>
                 </div>
 
-                <!-- Tech Feature List -->
-                <div class="grid sm:grid-cols-2 gap-4">
+                <!-- Paket 2 -->
+                <div
+                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group">
                     <div
-                        class="flex items-start gap-4 p-5 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
-                        <i class="fa-solid fa-gauge-high text-tech-red text-xl mt-0.5"></i>
-                        <div>
-                            <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-1.5">5G İle Hız
-                                Garantisi</h4>
-                            <p class="text-tech-silver/70 font-light text-[11px] leading-relaxed">Limitsiz ve yüksek
-                                hızlı internet deneyimini kesintisiz yaşayın.</p>
+                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
+                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
+                            Garantisi</span>
+                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">500 GB</h4>
+                    </div>
+                    <div class="p-6 text-center border-b border-tech-border">
+                        <div class="text-3xl text-white font-bold">₺890 <span
+                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
+                                ay sabit fiyat garantili</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
+                                ile fiber hızında</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Kurulum gerekmez, fişe tak çalıştır</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Modem ücreti dahil</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                2.500 TL’ye kadar cayma bedeli bizden</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#redbox-form"
+                            class="block text-center border border-tech-red text-tech-red hover:bg-tech-red hover:text-white py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
+                            Başvur</a>
+                    </div>
+                </div>
+
+                <!-- Paket 3 -->
+                <div
+                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group relative">
+                    <div
+                        class="absolute -top-3 left-1/2 -translate-x-1/2 bg-tech-red text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">
+                        En Çok Tercih Edilen</div>
+                    <div
+                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
+                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
+                            Garantisi</span>
+                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">1 TB</h4>
+                    </div>
+                    <div class="p-6 text-center border-b border-tech-border">
+                        <div class="text-3xl text-white font-bold">₺1.190 <span
+                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
+                                ay sabit fiyat garantili</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
+                                ile fiber hızında</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Kurulum gerekmez, fişe tak çalıştır</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Modem ücreti dahil</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                2.500 TL’ye kadar cayma bedeli bizden</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#redbox-form"
+                            class="block text-center border border-tech-red bg-tech-red text-white hover:bg-transparent hover:text-tech-red py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
+                            Başvur</a>
+                    </div>
+                </div>
+
+                <!-- Paket 4 -->
+                <div
+                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group">
+                    <div
+                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
+                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
+                            Garantisi</span>
+                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">SINIRSIZ</h4>
+                    </div>
+                    <div class="p-6 text-center border-b border-tech-border">
+                        <div class="text-3xl text-white font-bold">₺1.690 <span
+                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
+                                ay sabit fiyat garantili</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
+                                ile fiber hızında</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Kurulum gerekmez, fişe tak çalıştır</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                Modem ücreti dahil</li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
+                                2.500 TL’ye kadar cayma bedeli bizden</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#redbox-form"
+                            class="block text-center border border-tech-red text-tech-red hover:bg-tech-red hover:text-white py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
+                            Başvur</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adımlar ve Form Grid -->
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+
+            <!-- Sol Taraf: Kurulum Adımları (7 Kolon) -->
+            <div class="lg:col-span-7 space-y-8">
+                <h3
+                    class="text-2xl font-semibold uppercase tracking-tight text-white mb-8 border-b border-tech-border pb-4">
+                    5G RedBox Kurulum Adımları
+                </h3>
+
+                <div
+                    class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-px before:bg-gradient-to-b before:from-transparent before:via-tech-border before:to-transparent">
+
+                    <div class="relative flex items-start gap-6">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 border border-tech-red bg-tech-dark flex items-center justify-center text-tech-red font-semibold text-sm z-10">
+                            1</div>
+                        <div class="pt-2">
+                            <p class="text-tech-silver font-light text-sm leading-relaxed">Modeminizi, sinyal kalitesi
+                                için <strong>cam kenarına</strong> ve prize yakın bir yerde konumlandırın.</p>
                         </div>
                     </div>
 
-                    <div
-                        class="flex items-start gap-4 p-5 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
-                        <i class="fa-solid fa-plug text-tech-red text-xl mt-0.5"></i>
-                        <div>
-                            <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-1.5">Fişe Tak
-                                Çalıştır</h4>
-                            <p class="text-tech-silver/70 font-light text-[11px] leading-relaxed">Kablo veya teknik ekip
-                                beklemeden, sadece prize takarak bağlanın.</p>
+                    <div class="relative flex items-start gap-6">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 border border-tech-border bg-tech-dark flex items-center justify-center text-white font-semibold text-sm z-10">
+                            2</div>
+                        <div class="pt-2">
+                            <p class="text-tech-silver font-light text-sm leading-relaxed">SIM kartınızı, modemin
+                                altında veya arkasında bulunan SIM kart yuvasına doğru yönde takın.</p>
                         </div>
                     </div>
 
-                    <div
-                        class="sm:col-span-2 flex items-start gap-4 p-5 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
-                        <i class="fa-solid fa-rotate-left text-tech-red text-xl mt-0.5"></i>
-                        <div>
-                            <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-1.5">30 Gün
-                                İçinde Koşulsuz İade Hakkı!</h4>
-                            <p class="text-tech-silver/70 font-light text-[11px] leading-relaxed">Performanstan memnun
-                                kalmazsanız hiçbir cayma bedeli ödemeden cihazı iade edebilirsiniz.</p>
+                    <div class="relative flex items-start gap-6">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 border border-tech-border bg-tech-dark flex items-center justify-center text-white font-semibold text-sm z-10">
+                            3</div>
+                        <div class="pt-2">
+                            <p class="text-tech-silver font-light text-sm leading-relaxed">Güç adaptörünü modeme
+                                bağlayın.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-start gap-6">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 border border-tech-border bg-tech-dark flex items-center justify-center text-white font-semibold text-sm z-10">
+                            4</div>
+                        <div class="pt-2">
+                            <p class="text-tech-silver font-light text-sm leading-relaxed">Güç adaptörünü prize takın.
+                                Ardından modem otomatik olarak başlatılacaktır.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-start gap-6">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 border border-tech-red bg-tech-dark flex items-center justify-center text-tech-red font-semibold text-sm z-10">
+                            <i class="fa-solid fa-wifi text-xs"></i></div>
+                        <div class="pt-2">
+                            <p class="text-tech-silver font-light text-sm leading-relaxed">Cihazınızı, modem altında yer
+                                alan Wi-Fi adı ve şifre bilgilerini kullanarak modemin Wi-Fi ağına bağlayın.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Sağ Taraf: Başvuru Formu CTA (5 Kolon) -->
-            <div class="lg:col-span-5">
+            <div class="lg:col-span-5" id="redbox-form">
                 <div class="bg-tech-panel border border-tech-border p-8 md:p-10 relative">
-                    <!-- Küçük dekoratif çizgiler -->
+                    <!-- Dekoratif Çizgiler -->
                     <div class="absolute top-0 left-0 w-8 h-px bg-tech-red"></div>
                     <div class="absolute top-0 left-0 w-px h-8 bg-tech-red"></div>
+                    <div class="absolute bottom-0 right-0 w-8 h-px bg-tech-red"></div>
+                    <div class="absolute bottom-0 right-0 w-px h-8 bg-tech-red"></div>
 
                     <h3 class="text-xl font-semibold uppercase text-white mb-2 tracking-wide">Hemen Başvur</h3>
                     <p class="text-tech-silver/70 font-light text-xs mb-8 leading-relaxed">Sistem üzerinden ön
@@ -376,6 +596,21 @@
                                 class="w-full bg-tech-dark border border-tech-border text-white px-4 py-3.5 text-xs font-light focus:border-tech-red focus:outline-none transition-colors placeholder:text-tech-silver/30">
                         </div>
 
+                        <!-- Input: Tarife Seçimi -->
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] text-tech-silver uppercase tracking-[0.15em] font-medium">İlgilendiğiniz
+                                Tarife</label>
+                            <select
+                                class="w-full bg-tech-dark border border-tech-border text-white px-4 py-3.5 text-xs font-light focus:border-tech-red focus:outline-none transition-colors appearance-none cursor-pointer">
+                                <option value="" disabled selected>Lütfen Seçiniz</option>
+                                <option value="300gb">5G RedBox 300GB (₺690)</option>
+                                <option value="500gb">5G RedBox 500GB (₺890)</option>
+                                <option value="1tb">5G RedBox 1TB (₺1.190)</option>
+                                <option value="sinirsiz">5G RedBox Sınırsız (₺1.690)</option>
+                            </select>
+                        </div>
+
                         <!-- Input: Açık Adres -->
                         <div class="space-y-2">
                             <label class="text-[10px] text-tech-silver uppercase tracking-[0.15em] font-medium">Açık
@@ -385,15 +620,16 @@
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit"
-                            class="w-full bg-tech-red text-white py-4 text-xs font-medium uppercase tracking-[0.2em] border border-tech-red hover:bg-transparent hover:text-tech-red transition-all mt-4">
-                            Gönder & Aranma Talebi Oluştur
+                        <button type="button"
+                            onclick="window.open('https://api.whatsapp.com/send/?phone=905457382889&text=Merhaba,%20Vodafone%205G%20RedBox%20başvurusu%20yapmak%20istiyorum.', '_blank')"
+                            class="w-full bg-tech-red text-white py-4 text-xs font-medium uppercase tracking-[0.2em] border border-tech-red hover:bg-transparent hover:text-tech-red transition-all mt-4 flex justify-center items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp'tan Başvur
                         </button>
 
                         <!-- KVKK Note -->
                         <p class="text-center text-[9px] text-tech-silver/40 font-light mt-4 leading-relaxed">
-                            Formu göndererek, iletişim bilgilerinizin başvuru süreci için Koral İletişim tarafından
-                            işlenmesini kabul etmiş olursunuz.
+                            Form gönderim altyapısı yerine en hızlı çözüm için doğrudan WhatsApp hattımıza
+                            yönlendirileceksiniz.
                         </p>
                     </form>
                 </div>
@@ -834,7 +1070,7 @@
 
             <div
                 class="text-tech-silver/80 text-[10px] md:text-xs font-light mb-10 flex flex-col md:flex-row md:justify-center gap-2 md:gap-4 uppercase tracking-[0.1em]">
-                <span>Zafer Mh. Zafer Cd. No:17/C Gürsu / Bursa</span>
+                <span>Zafer Mh. Zafer Cd. No:50/B Gürsu / Bursa</span>
                 <span class="hidden md:block text-tech-border">|</span>
                 <span>0 545 738 28 89</span>
             </div>
