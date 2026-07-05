@@ -1,1109 +1,156 @@
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KORAL İletişim GÜRSU | Teknoloji ve İletişim Merkezi</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#000000">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/607e4879ac.js" crossorigin="uguralpyildiz"></script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        tech: {
-                            red: '#E50914',    /* Teknolojik, canlı kırmızı */
-                            silver: '#D1D5DB', /* Parlak gümüş / gri */
-                            dark: '#0A0A0A',   /* Derin siyah */
-                            panel: '#141414',  /* Paneller için hafif açık siyah */
-                            border: '#27272A'  /* İnce gümüş/gri çerçeveler */
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <title>koraltech.net</title>
     <style>
-        /* Teknolojik, ince scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
+ 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #202124;
+            margin: 0;
+            padding: 12vh 20px 20px;
+            display: flex;
+            justify-content: center;
+            line-height: 1.5;
         }
 
-        ::-webkit-scrollbar-track {
-            background: #0A0A0A;
+        .container {
+            max-width: 600px;
+            width: 100%;
         }
 
-        ::-webkit-scrollbar-thumb {
-            background: #3f3f46;
+        .icon {
+            width: 48px;
+            height: 48px;
+            color: #5f6368;
+            margin-bottom: 20px;
         }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: #E50914;
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            margin-top: 0;
+            color: #202124;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            color: #5f6368;
+            margin-top: 0;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .error-code {
+            font-size: 0.75rem;
+            color: #5f6368;
+            margin-bottom: 32px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 16px;
+            border: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: #1557b0;
+        }
+
+       
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #202124;
+                color: #e8eaed;
+            }
+
+            .icon {
+                color: #9aa0a6;
+            }
+
+            h1 {
+                color: #e8eaed;
+            }
+
+            p {
+                color: #9aa0a6;
+            }
+
+            a {
+                color: #8ab4f8;
+            }
+
+            .error-code {
+                color: #9aa0a6;
+            }
+
+            .button {
+                background-color: #8ab4f8;
+                color: #202124;
+            }
+
+            .button:hover {
+                background-color: #93bcf9;
+            }
         }
     </style>
 </head>
 
-<body class="font-sans text-tech-silver bg-tech-dark antialiased selection:bg-tech-red selection:text-white">
+<body>
 
-    <div
-        class="bg-tech-red text-white py-2 px-4 text-[10px] md:text-xs font-medium tracking-[0.2em] uppercase text-center border-b border-tech-dark">
-        2.EL VE SIFIR CİHAZLARINIZ DEĞERİNDE ALINIR <span class="hidden md:inline text-white/70">| GÜRSU / BURSA</span>
+    <div class="container">
+        
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="square" stroke-linejoin="miter">
+            <path
+                d="M28 4H12C9.79086 4 8 5.79086 8 8V40C8 42.2091 9.79086 44 12 44H36C38.2091 44 40 42.2091 40 40V16L28 4Z">
+            </path>
+            <path d="M28 4V16H40"></path>
+            <rect x="17" y="24" width="4" height="4" fill="currentColor" stroke="none"></rect>
+            <rect x="27" y="24" width="4" height="4" fill="currentColor" stroke="none"></rect>
+            <path d="M18 34C18 34 20 31 24 31C28 31 30 34 30 34"></path>
+        </svg>
+
+        <h1>Bu siteye ulaşılamıyor</h1>
+        <p><strong>koraltech.net</strong> ana makinesinin DNS adresi bulunamadı. Sorun teşhis ediliyor.</p>
+
+        <p><a href="javascript:diagnoseErrors()">Windows Ağ Teşhis Aracı'nı çalıştırmayı deneyin</a>.</p>
+
+        <span class="error-code">DNS_PROBE_STARTED</span>
+
+        <button class="button" onclick="window.location.reload()">Yeniden Yükle</button>
     </div>
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-tech-dark/95 backdrop-blur-md border-b border-tech-border transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
-                    <span class="font-semibold text-2xl tracking-widest text-tech-silver uppercase">Koral <span
-                            class="text-tech-red">İletişim</span></span>
-                </a>
-    
-                <!-- Desktop Menu -->
-                <div class="hidden lg:flex space-x-10 items-center font-medium text-xs tracking-[0.1em] uppercase">
-                    <a href="#hakkimizda" class="text-tech-silver hover:text-tech-red transition-colors">Hakkımızda</a>
-                    <a href="#uzmanlik" class="text-tech-silver hover:text-tech-red transition-colors">Hizmetler</a>
-                    <a href="#redbox" class="text-tech-silver hover:text-tech-red transition-colors">5G RedBox</a>
-                    <a href="#surec" class="text-tech-silver hover:text-tech-red transition-colors">Süreç</a>
-                    <a href="#s-s-s" class="text-tech-silver hover:text-tech-red transition-colors">SSS</a>
-                    <a href="tel:+905457382889"
-                        class="text-white bg-tech-red px-6 py-2.5 hover:bg-transparent hover:text-tech-red border border-tech-red transition-all flex items-center gap-2">
-                        <i class="fa-solid fa-phone"></i> 0 545 738 28 89
-                    </a>
-                </div>
-    
-                <!-- Mobile Menu Button -->
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn"
-                        class="text-tech-silver hover:text-tech-red transition-colors focus:outline-none p-2">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-    
-            <!-- Mobile Menu Dropdown (Varsayılan olarak gizli) -->
-            <div id="mobile-menu"
-                class="hidden absolute top-20 left-0 w-full bg-tech-panel border-b border-tech-border shadow-2xl z-40">
-                <div class="flex flex-col px-4 py-6 space-y-5 font-medium text-xs tracking-[0.1em] uppercase">
-                    <a href="#hakkimizda"
-                        class="mobile-link text-tech-silver hover:text-tech-red transition-colors border-b border-tech-border/50 pb-3">Hakkımızda</a>
-                    <a href="#uzmanlik"
-                        class="mobile-link text-tech-silver hover:text-tech-red transition-colors border-b border-tech-border/50 pb-3">Hizmetler</a>
-                    <a href="#redbox"
-                        class="mobile-link text-tech-silver hover:text-tech-red transition-colors border-b border-tech-border/50 pb-3">5G
-                        RedBox</a>
-                    <a href="#surec"
-                        class="mobile-link text-tech-silver hover:text-tech-red transition-colors border-b border-tech-border/50 pb-3">Süreç</a>
-                    <a href="#s-s-s"
-                        class="mobile-link text-tech-silver hover:text-tech-red transition-colors border-b border-tech-border/50 pb-3">SSS</a>
-                    <a href="tel:+905457382889"
-                        class="mobile-link text-white bg-tech-red px-6 py-4 hover:bg-transparent hover:text-tech-red border border-tech-red transition-all flex items-center justify-center gap-2 mt-2">
-                        <i class="fa-solid fa-phone"></i> 0 545 738 28 89
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Mobile Menu Script -->
     <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const icon = btn.querySelector('i');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        // Hamburger butona tıklanınca menüyü aç/kapat ve ikonu değiştir
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            if (menu.classList.contains('hidden')) {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            }
-        });
-
-        // Mobil menüdeki linklere tıklandığında menüyü otomatik kapat
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            });
-        });
-    </script>
-
-    <!-- Hero Section -->
-    <section
-        class="relative bg-tech-dark text-white min-h-[85vh] flex items-center overflow-hidden border-b border-tech-border py-20">
-        <!-- Abstract Background -->
-        <div
-            class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1762398509512-ad1104c4c2da?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-r from-tech-dark via-tech-dark/90 to-tech-dark/50 lg:to-transparent">
-        </div>
-    
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-    
-                <!-- Sol Taraf: Metin & CTA -->
-                <div class="lg:col-span-7">
-                    <div
-                        class="inline-block border-l-2 border-tech-red pl-3 text-tech-silver font-medium tracking-[0.2em] uppercase text-[10px] mb-8">
-                        Teknoloji & Ekspertiz
-                    </div>
-    
-                    <h1 class="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight uppercase mb-6 text-white">
-                        Cihazınızı <br>
-                        <span class="text-tech-red font-light">Güvenceye Alın.</span>
-                    </h1>
-    
-                    <p class="text-sm md:text-base text-tech-silver font-light max-w-lg leading-relaxed mb-10">
-                        İkinci el akıllı telefon alım satımı, anakart seviyesinde profesyonel onarım ve garantili teknik
-                        servis. Teknolojinize değerinde çözümler üretiyoruz.
-                    </p>
-    
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://api.whatsapp.com/send/?phone=905457382889&text=Merhaba,%20cihazım%20için%20fiyat%20almak%20istiyorum."
-                            target="_blank"
-                            class="flex justify-center items-center px-8 py-3.5 text-xs font-semibold text-white bg-tech-red hover:bg-transparent hover:text-tech-red transition-all uppercase tracking-[0.1em] border border-tech-red">
-                            Fiyat Teklifi Al
-                        </a>
-                        <a href="#uzmanlik"
-                            class="flex justify-center items-center px-8 py-3.5 text-xs font-medium text-tech-silver bg-transparent border border-tech-border hover:border-tech-silver transition-all uppercase tracking-[0.1em]">
-                            Hizmetleri İncele
-                        </a>
-                    </div>
-                </div>
-    
-                <!-- Sağ Taraf: Harita ve İstatistik Paneli -->
-                <div class="lg:col-span-5">
-                    <div
-                        class="bg-tech-panel/80 backdrop-blur-md border border-tech-border flex flex-col hover:border-tech-red/50 transition-colors duration-500 relative">
-    
-                        <!-- Map Section -->
-                        <div class="w-full h-48 border-b border-tech-border relative group">
-                            <!-- Harita üstü renk filtresi -->
-                            <div
-                                class="absolute inset-0 bg-tech-dark/20 pointer-events-none group-hover:bg-transparent transition-colors duration-500 z-10">
-                            </div>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.527239714185!2d29.18767571168998!3d40.219578067495874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca387c92327447%3A0x5fad656d39b20909!2sKORALCEP%20Hastanesi%2C%20Telefon%20Tamiri%2C%20Bilgisayar%20Tamiri!5e0!3m2!1str!2str!4v1711310659075!5m2!1str!2str"
-                                width="100%" height="100%"
-                                style="border:0; filter: grayscale(100%) contrast(110%) opacity(80%);" allowfullscreen=""
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                            <a href="https://maps.app.goo.gl/noDwUCaJSrtGDDAJ8" target="_blank"
-                                class="absolute bottom-4 right-4 z-20 bg-tech-dark border border-tech-border text-tech-silver px-3 py-1.5 text-[9px] uppercase tracking-widest hover:text-white hover:border-tech-red transition-colors flex items-center gap-2">
-                                <i class="fa-solid fa-location-arrow text-tech-red"></i> Yol Tarifi
-                            </a>
-                        </div>
-    
-                        <!-- Info/Stats Section -->
-                        <div class="p-6 md:p-8">
-                            <div class="flex justify-between items-start border-b border-tech-border pb-4 mb-5">
-                                <div>
-                                    <div class="text-[10px] text-tech-silver uppercase tracking-[0.2em] font-medium mb-1">
-                                        Lokasyon</div>
-                                    <div class="font-semibold text-base text-white uppercase tracking-widest">Gürsu Merkez
-                                    </div>
-                                </div>
-                                <div
-                                    class="border border-tech-red text-tech-red px-2 py-1 text-[9px] font-semibold uppercase tracking-[0.2em] flex items-center gap-1.5 animate-pulse">
-                                    <div class="w-1 h-1 bg-tech-red rounded-full"></div> Açık
-                                </div>
-                            </div>
-    
-                            <div class="space-y-3.5 text-[11px] font-medium uppercase tracking-[0.1em] text-tech-silver">
-                                <div class="flex justify-between items-center group cursor-default">
-                                    <span class="flex items-center gap-3"><i
-                                            class="fa-solid fa-battery-half text-tech-red w-4"></i> Batarya Değişimi</span>
-                                    <span class="text-white group-hover:text-tech-red transition-colors font-semibold">45
-                                        DK</span>
-                                </div>
-                                <div class="flex justify-between items-center group cursor-default">
-                                    <span class="flex items-center gap-3"><i
-                                            class="fa-solid fa-mobile-screen text-tech-red w-4"></i> Ekran Değişimi</span>
-                                    <span class="text-white group-hover:text-tech-red transition-colors font-semibold">Aynı
-                                        Gün</span>
-                                </div>
-                                <div class="flex justify-between items-center group cursor-default">
-                                    <span class="flex items-center gap-3"><i
-                                            class="fa-solid fa-microscope text-tech-red w-4"></i> Arıza Tespiti</span>
-                                    <span
-                                        class="text-white group-hover:text-tech-red transition-colors font-semibold">Ücretsiz</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-
-<!-- Vodafone 5G RedBox Section -->
-<!-- Vodafone 5G RedBox Section -->
-<section id="redbox" class="py-20 md:py-28 bg-tech-dark border-b border-tech-border relative overflow-hidden">
-    <!-- Background Red Tech Glow -->
-    <div
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-tech-red/5 rounded-[100%] blur-[120px] pointer-events-none">
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
-        <!-- Başlık & Banner -->
-        <div class="mb-16 text-center">
-            <div style="background: #fff;"
-                class="inline-flex items-center gap-2 border border-tech-red/50 bg-tech-red/0 px-10 py-0 text-[14x] md:text-[14px] font-bold  text-tech-red  mb-5">
-                <div class="vodafone-badge">
-                    <img style="width: 50px;"
-                        src="https://cms.vodafone.com.tr/static/img/content/26-05/12/icon-5g-new-1778582932.gif" alt="vodafone">
-                </div> Vodafone Yetkili Satış Noktası
-            </div>
-            <h2 class="text-3xl md:text-5xl font-semibold uppercase tracking-tight text-white mb-6">
-                5G RedBox <br class="md:hidden"><span class="font-light text-tech-silver">Ev İnterneti</span>
-            </h2>
-
-            <!-- Banner Image -->
-            <div class="max-w-4xl mx-auto  border border-tech-border p-1 bg-tech-panel mb-8">
-                <img src="https://cms.vodafone.com.tr/static/img/content/26-05/08/5gredbox_hizgarantisi_1122x300-2x-1778237802.jpg"
-                    alt="Vodafone 5G RedBox"
-                    class="w-full h-[170px] object-cover object-left opacity-90 hover:opacity-100 transition-opacity duration-500">
-            </div>
-
-            <div class="h-px w-16 bg-tech-red mx-auto mb-6"></div>
-            <p class="text-tech-silver font-light text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
-                Fiber altyapı olsun ya da olmasın, Vodafone 5G RedBox ile yüksek hızlı, kurulumsuz, fişe takıldığı anda
-                çalışan fiber hızında interneti evinize getiriyoruz. <strong>Memnun kalmazsan 30 gün içinde iade
-                    hakkı!</strong>
-            </p>
-        </div>
-
-        <!-- Özellikler Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-20">
-            <div
-                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
-                <i class="fa-solid fa-gauge-high text-tech-red text-2xl"></i>
-                <div>
-                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">5G ile Hız Garantisi
-                    </h4>
-                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">Hızınız 50 Mbps’in altında
-                        kalırsa, ilk 30 gün içinde iade hakkı!</p>
-                </div>
-            </div>
-
-            <div
-                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
-                <i class="fa-solid fa-box-open text-tech-red text-2xl"></i>
-                <div>
-                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">Anında Erişim</h4>
-                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">İster mağazadan teslim al, ister
-                        sipariş ver; adresine gelsin!</p>
-                </div>
-            </div>
-
-            <div
-                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
-                <i class="fa-solid fa-plug text-tech-red text-2xl"></i>
-                <div>
-                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">Anında Bağlantı</h4>
-                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">Kurulum gerekmez. Kutusundan
-                        çıkar, prize tak, birkaç dakika içinde internetin aktifleşir.</p>
-                </div>
-            </div>
-
-            <div
-                class="flex flex-col items-start gap-4 p-6 border border-tech-border bg-tech-panel hover:border-tech-red/50 transition-colors">
-                <i class="fa-solid fa-headset text-tech-red text-2xl"></i>
-                <div>
-                    <h4 class="text-white font-medium uppercase tracking-[0.1em] text-[11px] mb-2">Anında Destek</h4>
-                    <p class="text-tech-silver/70 font-light text-xs leading-relaxed">Ayrıcalıklı 7/24 çağrı merkezi ile
-                        beklemeden çözüme ulaş.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tarifeler -->
-        <div class="mb-20">
-            <div class="text-center mb-10">
-                <h3 class="text-2xl md:text-3xl font-semibold uppercase tracking-tight text-white mb-4">5G RedBox
-                    Tarifeleri</h3>
-                <div class="h-px w-12 bg-tech-silver/30 mx-auto"></div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Paket 1 -->
-                <div
-                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group">
-                    <div
-                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
-                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
-                            Garantisi</span>
-                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">300 GB</h4>
-                    </div>
-                    <div class="p-6 text-center border-b border-tech-border">
-                        <div class="text-3xl text-white font-bold">₺690 <span
-                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
-                    </div>
-                    <div class="p-6 flex-grow">
-                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
-                                ay sabit fiyat garantili</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
-                                ile fiber hızında</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Kurulum gerekmez, fişe tak çalıştır</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Modem ücreti dahil</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                2.500 TL’ye kadar cayma bedeli bizden</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 pt-0 mt-auto">
-                        <a href="#redbox-form"
-                            class="block text-center border border-tech-red text-tech-red hover:bg-tech-red hover:text-white py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
-                            Başvur</a>
-                    </div>
-                </div>
-
-                <!-- Paket 2 -->
-                <div
-                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group">
-                    <div
-                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
-                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
-                            Garantisi</span>
-                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">500 GB</h4>
-                    </div>
-                    <div class="p-6 text-center border-b border-tech-border">
-                        <div class="text-3xl text-white font-bold">₺890 <span
-                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
-                    </div>
-                    <div class="p-6 flex-grow">
-                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
-                                ay sabit fiyat garantili</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
-                                ile fiber hızında</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Kurulum gerekmez, fişe tak çalıştır</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Modem ücreti dahil</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                2.500 TL’ye kadar cayma bedeli bizden</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 pt-0 mt-auto">
-                        <a href="#redbox-form"
-                            class="block text-center border border-tech-red text-tech-red hover:bg-tech-red hover:text-white py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
-                            Başvur</a>
-                    </div>
-                </div>
-
-                <!-- Paket 3 -->
-                <div
-                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group relative">
-                    <div
-                        class="absolute -top-3 left-1/2 -translate-x-1/2 bg-tech-red text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1">
-                        En Çok Tercih Edilen</div>
-                    <div
-                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
-                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
-                            Garantisi</span>
-                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">1 TB</h4>
-                    </div>
-                    <div class="p-6 text-center border-b border-tech-border">
-                        <div class="text-3xl text-white font-bold">₺1.190 <span
-                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
-                    </div>
-                    <div class="p-6 flex-grow">
-                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
-                                ay sabit fiyat garantili</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
-                                ile fiber hızında</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Kurulum gerekmez, fişe tak çalıştır</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Modem ücreti dahil</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                2.500 TL’ye kadar cayma bedeli bizden</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 pt-0 mt-auto">
-                        <a href="#redbox-form"
-                            class="block text-center border border-tech-red bg-tech-red text-white hover:bg-transparent hover:text-tech-red py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
-                            Başvur</a>
-                    </div>
-                </div>
-
-                <!-- Paket 4 -->
-                <div
-                    class="border border-tech-border bg-tech-panel hover:border-tech-red transition-all flex flex-col group">
-                    <div
-                        class="bg-tech-dark p-5 border-b border-tech-border text-center group-hover:bg-tech-red/5 transition-colors">
-                        <span class="text-[9px] text-tech-red tracking-[0.2em] uppercase font-bold">5G İle Hız
-                            Garantisi</span>
-                        <h4 class="text-lg text-white font-semibold mt-2 uppercase tracking-wide">SINIRSIZ</h4>
-                    </div>
-                    <div class="p-6 text-center border-b border-tech-border">
-                        <div class="text-3xl text-white font-bold">₺1.690 <span
-                                class="text-xs font-light text-tech-silver uppercase">/Ay</span></div>
-                    </div>
-                    <div class="p-6 flex-grow">
-                        <ul class="space-y-3.5 text-[11px] text-tech-silver font-light">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 12
-                                ay sabit fiyat garantili</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i> 5G
-                                ile fiber hızında</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Kurulum gerekmez, fişe tak çalıştır</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                Modem ücreti dahil</li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-tech-red mt-0.5"></i>
-                                2.500 TL’ye kadar cayma bedeli bizden</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 pt-0 mt-auto">
-                        <a href="#redbox-form"
-                            class="block text-center border border-tech-red text-tech-red hover:bg-tech-red hover:text-white py-3 text-xs font-medium uppercase tracking-[0.15em] transition-all">Hemen
-                            Başvur</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Adımlar ve Form Grid -->
-        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-
-            <!-- Sol Taraf: Kurulum Adımları (7 Kolon) -->
-            <div class="lg:col-span-7 space-y-8">
-                <h3
-                    class="text-2xl font-semibold uppercase tracking-tight text-white mb-8 border-b border-tech-border pb-4">
-                    5G RedBox Kurulum Adımları
-                </h3>
-
-                <div
-                    class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-px before:bg-gradient-to-b before:from-transparent before:via-tech-border before:to-transparent">
-
-                    <div class="relative flex items-start gap-6">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 border border-tech-red bg-tech-dark flex items-center justify-center text-tech-red font-semibold text-sm z-10">
-                            1</div>
-                        <div class="pt-2">
-                            <p class="text-tech-silver font-light text-sm leading-relaxed">Modeminizi, sinyal kalitesi
-                                için <strong>cam kenarına</strong> ve prize yakın bir yerde konumlandırın.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex items-start gap-6">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 border border-tech-border bg-tech-dark flex items-center justify-center text-white font-semibold text-sm z-10">
-                            2</div>
-                        <div class="pt-2">
-                            <p class="text-tech-silver font-light text-sm leading-relaxed">SIM kartınızı, modemin
-                                altında veya arkasında bulunan SIM kart yuvasına doğru yönde takın.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex items-start gap-6">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 border border-tech-border bg-tech-dark flex items-center justify-center text-white font-semibold text-sm z-10">
-                            3</div>
-                        <div class="pt-2">
-                            <p class="text-tech-silver font-light text-sm leading-relaxed">Güç adaptörünü modeme
-                                bağlayın.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex items-start gap-6">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 border border-tech-border bg-tech-dark flex items-center justify-center text-white font-semibold text-sm z-10">
-                            4</div>
-                        <div class="pt-2">
-                            <p class="text-tech-silver font-light text-sm leading-relaxed">Güç adaptörünü prize takın.
-                                Ardından modem otomatik olarak başlatılacaktır.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex items-start gap-6">
-                        <div
-                            class="flex-shrink-0 w-10 h-10 border border-tech-red bg-tech-dark flex items-center justify-center text-tech-red font-semibold text-sm z-10">
-                            <i class="fa-solid fa-wifi text-xs"></i></div>
-                        <div class="pt-2">
-                            <p class="text-tech-silver font-light text-sm leading-relaxed">Cihazınızı, modem altında yer
-                                alan Wi-Fi adı ve şifre bilgilerini kullanarak modemin Wi-Fi ağına bağlayın.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       
+        function diagnoseErrors() {
+            console.log("Ağ teşhis aracı tetiklendi...");
            
-            <!-- Sağ Taraf: Başvuru Formu CTA (5 Kolon) -->
-            <div class="lg:col-span-5" id="redbox-form">
-                
-                <div class="bg-tech-panel border border-tech-border p-8 md:p-10 relative">
-                    <!-- Dekoratif Çizgiler -->
-                    <div class="absolute top-0 left-0 w-8 h-px bg-tech-red"></div>
-                    <div class="absolute top-0 left-0 w-px h-8 bg-tech-red"></div>
-                    <div class="absolute bottom-0 right-0 w-8 h-px bg-tech-red"></div>
-                    <div class="absolute bottom-0 right-0 w-px h-8 bg-tech-red"></div>
-                    <div 
-                        class="inline-flex items-center gap-2   py-0 text-[14x] md:text-[14px] font-bold  text-tech-red  mb-5">
-                        <div class="vodafone-badge">
-                            <img style="width: 50px;"
-                                src="https://cms.vodafone.com.tr/static/img/content/26-05/12/icon-5g-new-1778582932.gif" alt="vodafone">
-                        </div> Vodafone Yetkili Satış Noktası
-                    </div>
-                    <h3 class="text-xl font-semibold uppercase text-white mb-2 tracking-wide">Hemen Başvur</h3>
-                    <p class="text-tech-silver/70 font-light text-xs mb-8 leading-relaxed">Sistem üzerinden ön
-                        başvurunuzu bırakın, RedBox bağlantınız için sizi en kısa sürede arayalım.</p>
-
-                    <form action="#" method="POST" class="space-y-5">
-                        
-                        <!-- Input: Ad Soyad -->
-                        <div class="space-y-2">
-                            <label class="text-[10px] text-tech-silver uppercase tracking-[0.15em] font-medium">Adınız
-                                Soyadınız</label>
-                            <input type="text" placeholder="Örn: Ahmet Yılmaz"
-                                class="w-full bg-tech-dark border border-tech-border text-white px-4 py-3.5 text-xs font-light focus:border-tech-red focus:outline-none transition-colors placeholder:text-tech-silver/30">
-                        </div>
-
-                        <!-- Input: Telefon -->
-                        <div class="space-y-2">
-                            <label class="text-[10px] text-tech-silver uppercase tracking-[0.15em] font-medium">İletişim
-                                Numarası</label>
-                            <input type="tel" placeholder="0 (5XX) XXX XX XX"
-                                class="w-full bg-tech-dark border border-tech-border text-white px-4 py-3.5 text-xs font-light focus:border-tech-red focus:outline-none transition-colors placeholder:text-tech-silver/30">
-                        </div>
-
-                        <!-- Input: Tarife Seçimi -->
-                        <div class="space-y-2">
-                            <label
-                                class="text-[10px] text-tech-silver uppercase tracking-[0.15em] font-medium">İlgilendiğiniz
-                                Tarife</label>
-                            <select
-                                class="w-full bg-tech-dark border border-tech-border text-white px-4 py-3.5 text-xs font-light focus:border-tech-red focus:outline-none transition-colors appearance-none cursor-pointer">
-                                <option value="" disabled selected>Lütfen Seçiniz</option>
-                                <option value="300gb">5G RedBox 300GB (₺690)</option>
-                                <option value="500gb">5G RedBox 500GB (₺890)</option>
-                                <option value="1tb">5G RedBox 1TB (₺1.190)</option>
-                                <option value="sinirsiz">5G RedBox Sınırsız (₺1.690)</option>
-                            </select>
-                        </div>
-
-                        <!-- Input: Açık Adres -->
-                        <div class="space-y-2">
-                            <label class="text-[10px] text-tech-silver uppercase tracking-[0.15em] font-medium">Açık
-                                Adres (İlçe / Mahalle)</label>
-                            <textarea rows="3" placeholder="Bursa / Gürsu - Zafer Mah..."
-                                class="w-full bg-tech-dark border border-tech-border text-white px-4 py-3.5 text-xs font-light focus:border-tech-red focus:outline-none transition-colors placeholder:text-tech-silver/30 resize-none"></textarea>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <button type="button"
-                            onclick="window.open('https://api.whatsapp.com/send/?phone=905457382889&text=Merhaba,%20Vodafone%205G%20RedBox%20başvurusu%20yapmak%20istiyorum.', '_blank')"
-                            class="w-full bg-tech-red text-white py-4 text-xs font-medium uppercase tracking-[0.2em] border border-tech-red hover:bg-transparent hover:text-tech-red transition-all mt-4 flex justify-center items-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp'tan Başvur
-                        </button>
-
-                        <!-- KVKK Note -->
-                        <p class="text-center text-[9px] text-tech-silver/40 font-light mt-4 leading-relaxed">
-                            Form gönderim altyapısı yerine en hızlı çözüm için doğrudan WhatsApp hattımıza
-                            yönlendirileceksiniz.
-                        </p>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    <section id="hakkimizda" class="py-20 md:py-28 bg-tech-dark border-b border-tech-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                <div class="space-y-6">
-                    <div
-                        class="inline-block border-l-2 border-tech-red pl-3 text-tech-silver font-medium tracking-[0.2em] uppercase text-[10px]">
-                        Kurumsal</div>
-                    <h2 class="text-3xl md:text-4xl font-semibold uppercase tracking-tight text-white leading-tight">
-                        Sektörde <br><span class="text-tech-red font-light">Güvenin Adresi</span>
-                    </h2>
-                    <p class="text-tech-silver leading-relaxed font-light text-sm md:text-base">
-                        Bursa, Gürsu'da yılların getirdiği sektörel tecrübe ile Koral İletişim olarak, teknoloji
-                        ihtiyaçlarınıza şeffaf, hızlı ve garantili çözümler sunuyoruz.
-                    </p>
-                    <p class="text-tech-silver/70 leading-relaxed font-light text-sm md:text-base">
-                        Sıradan telefoncuların aksine, cihazlarınıza mühendislik yaklaşımıyla bakarız. Yazılım
-                        çökmelerinden, en ince anakart onarımlarına kadar her işlem, donanımlı laboratuvarımızda
-                        profesyonelce gerçekleştirilir.
-                    </p>
-                    <div class="grid grid-cols-2 gap-8 pt-6 mt-6 border-t border-tech-border">
-                        <div>
-                            <div class="text-3xl font-semibold text-white">10+</div>
-                            <div class="text-[10px] uppercase tracking-[0.15em] text-tech-silver mt-1">Yıllık Tecrübe
-                            </div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-semibold text-white">5B+</div>
-                            <div class="text-[10px] uppercase tracking-[0.15em] text-tech-silver mt-1">Onarılan Cihaz
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-<!-- İletişim CTA Section -->
-<section
-    class="relative py-24 md:py-32 bg-tech-dark border-b border-tech-border overflow-hidden flex justify-center items-center">
-    <!-- Abstract Background -->
-    <div
-        class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center grayscale">
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-tech-dark via-tech-dark/80 to-tech-dark/95"></div>
-
-    <!-- Üst ve Alt Lazer Çizgileri -->
-    <div
-        class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tech-red to-transparent opacity-50">
-    </div>
-    <div
-        class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tech-red to-transparent opacity-50">
-    </div>
-
-    <div class="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-
-        <!-- Tech Subtitle with Pulse -->
-        <div
-            class="inline-flex items-center gap-2 border border-tech-border bg-tech-panel/50 backdrop-blur-sm px-4 py-2 text-[10px] md:text-xs font-medium tracking-[0.2em] text-tech-silver uppercase mb-6">
-            <div class="w-1.5 h-1.5 bg-tech-red animate-pulse"></div> Hızlı Destek Hattı
-        </div>
-
-        <!-- Heading -->
-        <h2
-            class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase tracking-tight text-white mb-6 leading-tight">
-            Cihazınızı <span class="text-tech-red font-light">Uzmanlara</span> <br class="hidden sm:block"> Teslim Edin.
-        </h2>
-
-        <!-- Paragraph -->
-        <p class="text-tech-silver/80 font-light text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-10">
-            Ücretsiz arıza tespiti, anında ekran/batarya değişimi veya 2. el cihazlarınız için şeffaf fiyat teklifi
-            almak üzere şimdi bizimle iletişime geçin.
-        </p>
-
-        <!-- Buttons Grid -->
-        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-            <a href="https://api.whatsapp.com/send/?phone=905457382889&text=Merhaba,%20web%20sitenizden%20ulaşıyorum,%20bilgi%20almak%20istiyorum."
-                target="_blank"
-                class="group relative flex items-center justify-center gap-3 px-8 py-4 bg-tech-red border border-tech-red text-white text-xs font-semibold uppercase tracking-[0.15em] hover:bg-transparent hover:text-tech-red transition-all w-full sm:w-auto overflow-hidden">
-                <!-- Hover Effect Background -->
-                <div
-                    class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
-                </div>
-                <i class="fa-brands fa-whatsapp text-xl relative z-10"></i>
-                <span class="relative z-10">WhatsApp'tan Yazın</span>
-            </a>
-
-            <a href="tel:+905457382889"
-                class="flex items-center justify-center gap-3 px-8 py-4 bg-transparent border border-tech-border text-tech-silver text-xs font-medium uppercase tracking-[0.15em] hover:border-tech-silver hover:text-white transition-all w-full sm:w-auto bg-tech-panel/30 backdrop-blur-sm">
-                <i class="fa-solid fa-phone text-lg"></i>
-                <span>0 545 738 28 89</span>
-            </a>
-        </div>
-
-        <!-- Extra info -->
-        <div class="mt-8 text-[9px] text-tech-silver/40 uppercase tracking-[0.1em] font-light">
-            * Operasyon birimimiz haftanın 7 günü 09:00 - 23:00 saatleri arasında aktiftir.
-        </div>
-    </div>
-</section>
-    <section id="uzmanlik" class="py-20 md:py-28 bg-tech-panel border-b border-tech-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-12 md:mb-16">
-                <h2 class="text-3xl font-semibold uppercase tracking-tight text-white mb-4">Hizmetlerimiz</h2>
-                <div class="h-px w-16 bg-tech-red mb-6"></div>
-                <p class="text-tech-silver font-light text-sm md:text-base max-w-2xl">Donanımsal ve yazılımsal tüm
-                    sorunlarınız için tek durak noktası. Her işlem kayıt altında ve garantili olarak yapılır.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-
-                <div class="bg-tech-dark p-8 border border-tech-border hover:border-tech-red transition-all group">
-                    <i
-                        class="fa-solid fa-mobile-screen-button text-2xl text-tech-silver group-hover:text-tech-red transition-colors mb-5"></i>
-                    <h3 class="text-base font-semibold uppercase mb-3 text-white tracking-wide">Ekran & Batarya</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Orijinal veya A kalite yedek
-                        parçalarla, true-tone ve sıvı bandı korumalı profesyonel değişim.</p>
-                </div>
-
-                <div class="bg-tech-dark p-8 border border-tech-border hover:border-tech-red transition-all group">
-                    <i
-                        class="fa-solid fa-memory text-2xl text-tech-silver group-hover:text-tech-red transition-colors mb-5"></i>
-                    <h3 class="text-base font-semibold uppercase mb-3 text-white tracking-wide">Anakart Onarımı</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Şarj entegresi, baseband sorunları
-                        ve kısa devre arızalarının mikroskop altında kesin çözümü.</p>
-                </div>
-
-                <div class="bg-tech-dark p-8 border border-tech-border hover:border-tech-red transition-all group">
-                    <i
-                        class="fa-solid fa-terminal text-2xl text-tech-silver group-hover:text-tech-red transition-colors mb-5"></i>
-                    <h3 class="text-base font-semibold uppercase mb-3 text-white tracking-wide">Yazılım & Kurtarma</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Çökmüş cihaz onarımı, FRP bypass
-                        işlemleri ve güvenli veri kurtarma süreçleri.</p>
-                </div>
-
-                <div class="bg-tech-dark p-8 border border-tech-border hover:border-tech-red transition-all group">
-                    <i
-                        class="fa-solid fa-laptop text-2xl text-tech-silver group-hover:text-tech-red transition-colors mb-5"></i>
-                    <h3 class="text-base font-semibold uppercase mb-3 text-white tracking-wide">PC & Laptop Servisi</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Termal bakım, SSD/RAM upgrade,
-                        menteşe tamiri ile bilgisayarlarınız ilk günkü hızında.</p>
-                </div>
-
-                <div class="bg-tech-dark p-8 border border-tech-border hover:border-tech-red transition-all group">
-                    <i
-                        class="fa-solid fa-handshake text-2xl text-tech-silver group-hover:text-tech-red transition-colors mb-5"></i>
-                    <h3 class="text-base font-semibold uppercase mb-3 text-white tracking-wide">Ekspertiz & Alım</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Cihazlarınız teste sokulur ve
-                        donanım kondisyonuna göre net ve şeffaf fiyat teklifi verilir.</p>
-                </div>
-
-                <div class="bg-tech-red p-8 border border-tech-red flex flex-col justify-center">
-                    <h3 class="text-lg font-semibold uppercase mb-3 text-white tracking-wide">Farklı Bir Sorun?</h3>
-                    <p class="text-white/80 font-light text-sm leading-relaxed mb-6">Ücretsiz arıza tespiti için bizimle
-                        hızlıca iletişime geçin.</p>
-                    <a href="https://api.whatsapp.com/send/?phone=905457382889" target="_blank"
-                        class="px-6 py-2.5 border border-white text-white font-medium uppercase tracking-[0.1em] text-[10px] hover:bg-white hover:text-tech-red transition-colors text-center w-full sm:w-auto self-start">
-                        Bize Ulaşın
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="surec" class="py-20 md:py-28 bg-tech-dark border-b border-tech-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-12 md:mb-16">
-                <h2 class="text-3xl font-semibold uppercase tracking-tight text-white mb-4">İşlem Süreci</h2>
-                <div class="h-px w-16 bg-tech-red mb-6"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="relative pl-6 border-l border-tech-border">
-                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-tech-red"></div>
-                    <div class="text-[10px] font-bold text-tech-silver tracking-[0.2em] mb-2">ADIM 01</div>
-                    <h3 class="text-base font-semibold uppercase text-white mb-2 tracking-wide">Tespit & Teklif</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Cihazınız detaylı testlerden
-                        geçirilir. Arıza tespit edilir veya ikinci el değeri belirlenerek net fiyat verilir.</p>
-                </div>
-
-                <div class="relative pl-6 border-l border-tech-border">
-                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-tech-silver"></div>
-                    <div class="text-[10px] font-bold text-tech-silver tracking-[0.2em] mb-2">ADIM 02</div>
-                    <h3 class="text-base font-semibold uppercase text-white mb-2 tracking-wide">Onarım & Test</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Onayınızla birlikte işlem başlar.
-                        Kaliteli yedek parçalar kullanılarak onarım yapılır ve stres testine sokulur.</p>
-                </div>
-
-                <div class="relative pl-6 border-l border-tech-border">
-                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-white"></div>
-                    <div class="text-[10px] font-bold text-tech-silver tracking-[0.2em] mb-2">ADIM 03</div>
-                    <h3 class="text-base font-semibold uppercase text-white mb-2 tracking-wide">Teslimat & Garanti</h3>
-                    <p class="text-tech-silver/70 font-light text-sm leading-relaxed">Cihazınız ilk günkü performansına
-                        kavuşmuş olarak teslim edilir. Donanımsal işlemler garantimiz altındadır.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Galeri (Siber-Teknolojik Grid) -->
-<section id="galeri" class="py-20 md:py-28 bg-tech-panel border-b border-tech-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="mb-12 md:mb-16">
-            <h2 class="text-3xl font-semibold uppercase tracking-tight text-white mb-4">Galeri</h2>
-            <div class="h-px w-16 bg-tech-red"></div>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (1).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (2).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (3).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (4).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (5).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (6).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (7).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (8).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (9).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (10).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (11).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (12).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (13).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (14).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-            <div class="group overflow-hidden bg-tech-dark relative aspect-square border border-tech-border">
-                <img src="img/resim (15).jpeg" alt="koralcep gürsu"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            </div>
-        </div>
-    </div>
-</section>
-<!-- İletişim CTA Section -->
-<section
-    class="relative py-24 md:py-32 bg-tech-dark border-b border-tech-border overflow-hidden flex justify-center items-center">
-    <!-- Abstract Background -->
-    <div
-        class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center grayscale">
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-tech-dark via-tech-dark/80 to-tech-dark/95"></div>
-
-    <!-- Üst ve Alt Lazer Çizgileri -->
-    <div
-        class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tech-red to-transparent opacity-50">
-    </div>
-    <div
-        class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tech-red to-transparent opacity-50">
-    </div>
-
-    <div class="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-
-        <!-- Tech Subtitle with Pulse -->
-        <div
-            class="inline-flex items-center gap-2 border border-tech-border bg-tech-panel/50 backdrop-blur-sm px-4 py-2 text-[10px] md:text-xs font-medium tracking-[0.2em] text-tech-silver uppercase mb-6">
-            <div class="w-1.5 h-1.5 bg-tech-red animate-pulse"></div> Hızlı Destek Hattı
-        </div>
-
-        <!-- Heading -->
-        <h2
-            class="text-3xl md:text-5xl lg:text-6xl font-semibold uppercase tracking-tight text-white mb-6 leading-tight">
-            Cihazınızı <span class="text-tech-red font-light">Uzmanlara</span> <br class="hidden sm:block"> Teslim Edin.
-        </h2>
-
-        <!-- Paragraph -->
-        <p class="text-tech-silver/80 font-light text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-10">
-            Ücretsiz arıza tespiti, anında ekran/batarya değişimi veya 2. el cihazlarınız için şeffaf fiyat teklifi
-            almak üzere şimdi bizimle iletişime geçin.
-        </p>
-
-        <!-- Buttons Grid -->
-        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-            <a href="https://api.whatsapp.com/send/?phone=905457382889&text=Merhaba,%20web%20sitenizden%20ulaşıyorum,%20bilgi%20almak%20istiyorum."
-                target="_blank"
-                class="group relative flex items-center justify-center gap-3 px-8 py-4 bg-tech-red border border-tech-red text-white text-xs font-semibold uppercase tracking-[0.15em] hover:bg-transparent hover:text-tech-red transition-all w-full sm:w-auto overflow-hidden">
-                <!-- Hover Effect Background -->
-                <div
-                    class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
-                </div>
-                <i class="fa-brands fa-whatsapp text-xl relative z-10"></i>
-                <span class="relative z-10">WhatsApp'tan Yazın</span>
-            </a>
-
-            <a href="tel:+905457382889"
-                class="flex items-center justify-center gap-3 px-8 py-4 bg-transparent border border-tech-border text-tech-silver text-xs font-medium uppercase tracking-[0.15em] hover:border-tech-silver hover:text-white transition-all w-full sm:w-auto bg-tech-panel/30 backdrop-blur-sm">
-                <i class="fa-solid fa-phone text-lg"></i>
-                <span>0 545 738 28 89</span>
-            </a>
-        </div>
-
-        <!-- Extra info -->
-        <div class="mt-8 text-[9px] text-tech-silver/40 uppercase tracking-[0.1em] font-light">
-            * Operasyon birimimiz haftanın 7 günü 09:00 - 23:00 saatleri arasında aktiftir.
-        </div>
-    </div>
-</section>
-    <section id="s-s-s" class="py-20 md:py-28 bg-tech-dark border-b border-tech-border">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-12">
-                <h2 class="text-2xl md:text-3xl font-semibold uppercase tracking-tight text-white mb-4">Sıkça Sorulan
-                    Sorular</h2>
-                <div class="h-px w-16 bg-tech-red"></div>
-            </div>
-
-            <div class="space-y-3">
-                <details class="group bg-tech-panel border border-tech-border open:border-tech-silver transition-colors"
-                    open>
-                    <summary
-                        class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-white uppercase tracking-wider text-[10px] md:text-xs">
-                        <span>İkinci El ve Sıfır Alım Satım Var Mı?</span>
-                        <span class="transition group-open:rotate-180"><i
-                                class="fa-solid fa-angle-down text-tech-red"></i></span>
-                    </summary>
-                    <div
-                        class="text-tech-silver/80 px-5 pb-5 font-light leading-relaxed border-t border-tech-border pt-4 mt-1 text-xs md:text-sm">
-                        Evet, her marka ve model cihazlarınız uzman ekibimiz tarafından detaylıca incelenip piyasa
-                        değerinde satın alınır. Sıfır cihaz satışımız mevcuttur.
-                    </div>
-                </details>
-
-                <details
-                    class="group bg-tech-panel border border-tech-border open:border-tech-silver transition-colors">
-                    <summary
-                        class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-white uppercase tracking-wider text-[10px] md:text-xs">
-                        <span>Yazılım ve IMEI Onarımı Yapıyor Musunuz?</span>
-                        <span class="transition group-open:rotate-180"><i
-                                class="fa-solid fa-angle-down text-tech-red"></i></span>
-                    </summary>
-                    <div
-                        class="text-tech-silver/80 px-5 pb-5 font-light leading-relaxed border-t border-tech-border pt-4 mt-1 text-xs md:text-sm">
-                        Cihaz çökmeleri, logo takılı kalma sorunları, kilit kırma işlemleri ve yasal çerçevede yazılım
-                        onarım hizmetlerimiz sağlanmaktadır.
-                    </div>
-                </details>
-
-                <details
-                    class="group bg-tech-panel border border-tech-border open:border-tech-silver transition-colors">
-                    <summary
-                        class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-white uppercase tracking-wider text-[10px] md:text-xs">
-                        <span>Teknik Servis Garantili Mi?</span>
-                        <span class="transition group-open:rotate-180"><i
-                                class="fa-solid fa-angle-down text-tech-red"></i></span>
-                    </summary>
-                    <div
-                        class="text-tech-silver/80 px-5 pb-5 font-light leading-relaxed border-t border-tech-border pt-4 mt-1 text-xs md:text-sm">
-                        Kesinlikle. Ekran değişimi, batarya yenileme ve anakart onarımı gibi tüm donanımsal
-                        müdahalelerimiz tarafımızca garantilidir.
-                    </div>
-                </details>
-
-                <details
-                    class="group bg-tech-panel border border-tech-border open:border-tech-silver transition-colors">
-                    <summary
-                        class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-white uppercase tracking-wider text-[10px] md:text-xs">
-                        <span>Çalışma Saatleriniz Nelerdir?</span>
-                        <span class="transition group-open:rotate-180"><i
-                                class="fa-solid fa-angle-down text-tech-red"></i></span>
-                    </summary>
-                    <div
-                        class="text-tech-silver/80 px-5 pb-5 font-light leading-relaxed border-t border-tech-border pt-4 mt-1 text-xs md:text-sm">
-                        Haftanın her günü, Pazartesi'den Pazar'a kesintisiz olarak 09:00 - 23:00 saatleri arasında
-                        hizmet vermekteyiz.
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-tech-panel pt-16 pb-8 text-left md:text-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-3xl font-semibold tracking-widest uppercase mb-4 text-white">KORAL<span
-                    class="text-tech-red font-light">CEP</span></h3>
-            <p class="text-tech-silver/60 font-light text-xs md:text-sm leading-relaxed mb-8 max-w-sm md:mx-auto">
-                Gürsu, Bursa'da akıllı teknoloji çözümleri. Güvenilir alım-satım ve profesyonel teknik servis.
-            </p>
-
-            <div class="flex flex-wrap md:justify-center gap-4 mb-10">
-                <a href="https://www.instagram.com/koralcephastanesi" target="_blank"
-                    class="w-10 h-10 border border-tech-border flex items-center justify-center hover:border-tech-red hover:text-white hover:bg-tech-red transition-all text-tech-silver">
-                    <i class="fa-brands fa-instagram text-sm"></i>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100063040480143&mibextid=ZbWKwL" target="_blank"
-                    class="w-10 h-10 border border-tech-border flex items-center justify-center hover:border-tech-red hover:text-white hover:bg-tech-red transition-all text-tech-silver">
-                    <i class="fa-brands fa-facebook-f text-sm"></i>
-                </a>
-                <a href="tel:+905457382889"
-                    class="w-10 h-10 border border-tech-border flex items-center justify-center hover:border-tech-red hover:text-white hover:bg-tech-red transition-all text-tech-silver">
-                    <i class="fa-solid fa-phone text-sm"></i>
-                </a>
-            </div>
-
-            <div
-                class="text-tech-silver/80 text-[10px] md:text-xs font-light mb-10 flex flex-col md:flex-row md:justify-center gap-2 md:gap-4 uppercase tracking-[0.1em]">
-                <span>Zafer Mh. Zafer Cd. No:50/B Gürsu / Bursa</span>
-                <span class="hidden md:block text-tech-border">|</span>
-                <span>0 545 738 28 89</span>
-            </div>
-
-            <div
-                class="pt-6 border-t border-tech-border flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4">
-                <p class="text-tech-silver/40 text-[9px] font-medium tracking-[0.15em] uppercase">
-                    © 2024 KORALTECH.NET - TÜM HAKLARI SAKLIDIR.
-                </p>
-                <a href="#"
-                    class="text-tech-red text-[9px] font-medium tracking-[0.15em] uppercase hover:text-white transition-colors">
-                    YUKARI ÇIK <i class="fa-solid fa-arrow-up ml-1"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://api.whatsapp.com/send/?phone=905457382889&text=Merhaba,%20web%20sitenizden%20ulaşıyorum."
-        target="_blank"
-        class="fixed bottom-6 right-6 bg-tech-red text-white w-12 h-12 flex items-center justify-center hover:bg-transparent hover:text-tech-red border border-tech-red transition-all z-50">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-    </a>
+        }
+    </script>
 
 </body>
 
